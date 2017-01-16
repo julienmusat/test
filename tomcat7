@@ -1,3 +1,4 @@
+#!/bin/bash
 stop() {
     echo "Stopping Tomcat product..."
     su --preserve-environment $TOMCAT_OWNER -c "cd $CATALINA_HOME && $STOP_DAEMON"
